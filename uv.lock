@@ -1029,6 +1029,9 @@ name = "pintext"
 version = "0.1.0.dev0"
 source = { editable = "." }
 dependencies = [
+    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.11.*'" },
+    { name = "numpy", version = "2.5.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "pint", version = "0.24.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "pint", version = "0.25.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
 ]
@@ -1055,9 +1058,6 @@ xarray = [
 dev = [
     { name = "myst-parser", version = "4.0.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "myst-parser", version = "5.1.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
-    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
-    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.11.*'" },
-    { name = "numpy", version = "2.5.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "pytest" },
     { name = "pytest-cov" },
     { name = "ruff" },
@@ -1097,9 +1097,6 @@ docs = [
     { name = "sphinx-iconify" },
 ]
 test = [
-    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
-    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.11.*'" },
-    { name = "numpy", version = "2.5.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "pytest" },
     { name = "pytest-cov" },
     { name = "xdoctest" },
@@ -1108,6 +1105,7 @@ test = [
 [package.metadata]
 requires-dist = [
     { name = "attrs", marker = "extra == 'attrs'", specifier = ">=22.2" },
+    { name = "numpy", specifier = ">=1.24.4" },
     { name = "pint", specifier = ">=0.20" },
     { name = "pintext", extras = ["attrs", "pydantic", "xarray"], marker = "extra == 'all'" },
     { name = "pydantic", marker = "extra == 'pydantic'", specifier = ">=2.0" },
@@ -1118,7 +1116,6 @@ provides-extras = ["all", "attrs", "pydantic", "xarray"]
 [package.metadata.requires-dev]
 dev = [
     { name = "myst-parser", specifier = ">=0.16" },
-    { name = "numpy", specifier = ">=1.24.4" },
     { name = "pytest", specifier = ">=9.0" },
     { name = "pytest-cov", specifier = ">=3.0" },
     { name = "ruff", specifier = ">=0.15.4" },
@@ -1145,7 +1142,6 @@ docs = [
     { name = "sphinx-iconify", specifier = ">=0.3" },
 ]
 test = [
-    { name = "numpy", specifier = ">=1.24.4" },
     { name = "pytest", specifier = ">=9.0" },
     { name = "pytest-cov", specifier = ">=3.0" },
     { name = "xdoctest", specifier = ">=0.15.0" },
