@@ -3,7 +3,7 @@
 Porting from Pinttrs
 ====================
 
-Pintext is the continuation of `Pinttrs <https://pypi.org/project/pinttrs>`_,
+Pintext is the continuation of `Pinttrs <https://pypi.org/project/pinttrs>`__,
 rescoped around :doc:`unit contexts <user_guide/unit_contexts>`. The *attrs*
 integration is now optional and lives in a dedicated namespace.
 

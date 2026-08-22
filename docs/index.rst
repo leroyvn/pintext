@@ -53,10 +53,10 @@ that core are provided.
         Browse the source code.
 
 Pintext is distributed under the terms of the
-`MIT license <https://choosealicense.com/licenses/mit/>`_. It is written and
-maintained by `Vincent Leroy <https://github.com/leroyvn>`_, with development
-supported by `Rayference <https://www.rayference.eu>`_, and is a component of
-the `Eradiate radiative transfer model <https://www.eradiate.eu>`_.
+`MIT license <https://choosealicense.com/licenses/mit/>`__. It is written and
+maintained by `Vincent Leroy <https://github.com/leroyvn>`__, with development
+supported by `Rayference <https://www.rayference.eu>`__, and is a component of
+the `Eradiate radiative transfer model <https://www.eradiate.eu>`__.
 
 .. toctree::
    :maxdepth: 2

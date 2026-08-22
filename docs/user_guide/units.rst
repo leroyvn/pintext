@@ -12,7 +12,7 @@ The unit registry
 
 Pint requires units to be created by a unit registry. Pintext keeps a module
 -level default, which is Pint's
-`application registry <https://pint.readthedocs.io/en/stable/getting/pint-in-your-projects.html#having-a-shared-registry>`_
+`application registry <https://pint.readthedocs.io/en/stable/getting/pint-in-your-projects.html#having-a-shared-registry>`__
 unless changed with :func:`.set_unit_registry`:
 
 .. doctest::
