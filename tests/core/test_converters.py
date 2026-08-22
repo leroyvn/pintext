@@ -115,7 +115,7 @@ class TestToQuantity:
 
     def test_others(self):
         # Pint quantities passed through
-        v = [1.0, 1.0] * ureg.m
+        v = 1.0 * ureg.m
         v_ = to_quantity(v)
         assert v.m is v_.m
 
