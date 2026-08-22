@@ -32,10 +32,10 @@ Extras: `pintext[attrs]`, `pintext[pydantic]`, `pintext[all]`.
 
 ## Common commands
 
-Tasks are defined under `[tool.taskipy.tasks]` in `pyproject.toml`.
+Tasks are defined under `[tool.poe.tasks]` in `pyproject.toml`.
 
-- `uv run task test` — run the full suite (unit tests + doctests).
-- `uv run task docs` / `docs-serve` / `docs-clean` — build / live-serve / clean
+- `uv run poe test` — run the full suite (unit tests + doctests).
+- `uv run poe docs` / `docs-serve` / `docs-clean` — build / live-serve / clean
   the Sphinx docs.
 - `uv run ruff check` / `uv run ruff format --check` — lint and format checks.
 - `uv run ty check` — type check (scoped to `src/`; see `[tool.ty.src]`).

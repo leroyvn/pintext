@@ -104,15 +104,15 @@ test = ["pytest-cov>=3.0", "pytest>=9.0", "numpy>=1.24.4", "xdoctest>=0.15.0"]
 dev = [
   { include-group = "test" },
   { include-group = "docs" },
+  "poethepoet>=0.48.0",
   "ruff>=0.15.4",
   "setuptools>=69.1.1",
-  "taskipy>=1.10",
   "ty>=0.0.20",
 ]
 
 [tool.repo-review]
 ignore = [
-  "PY007", # repo-review recommends nox for task running, but be use taskipy
+  "PY007", # repo-review recommends nox for task running, but be use peothepoet
   "PC111",
   "PC140",
   "PC160",
@@ -121,9 +121,9 @@ ignore = [
   "MY", # TODO (typing)
 ]
 
-[tool.taskipy.tasks]
-docs = "sphinx-build -b html docs docs/_build/html"
-docs-clean = "rm -rf docs/_build/"
-docs-serve = "sphinx-autobuild docs docs/_build/html"
-docs-lock = "uv export --format requirements.txt --all-extras --group docs --no-hashes -o requirements/docs.txt"
-test = "pytest"
+[tool.poe.tasks]
+docs = { cmd = "sphinx-build -b html docs docs/_build/html", help = "Build documentation" }
+docs-clean = { cmd = "rm -rf docs/_build/", help = "Delete documentation build products" }
+docs-serve = { cmd = "sphinx-autobuild docs docs/_build/html", help = "Build documentation (live server)" }
+docs-lock = { cmd = "uv export --format requirements.txt --all-extras --group docs --no-hashes -o requirements/docs.txt", help = "Export locked docs build environment" }
+test = { cmd = "pytest", help = "Run the test suite" }

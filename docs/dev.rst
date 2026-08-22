@@ -20,7 +20,8 @@ Developing requires:
 
 * the `uv <https://docs.astral.sh/uv/>`__ package manager;
 * the `pre-commit <https://pre-commit.com/>`__ git hook manager (or its drop-in
-  replacement `prek <https://prek.j178.dev/>`__).
+  replacement `prek <https://prek.j178.dev/>`__);
+* the `poethepoet <https://poethepoet.natn.io/>`__ task runner (optional).
 
 Setting up a development environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -69,7 +70,7 @@ defined to help you run the tests:
 
 .. code:: bash
 
-    uv run task test
+    poe test  # or uv run poe test if poe is not available globally on your system
 
 This runs unit tests, the doctests embedded in every docstring under `src/`,
 and the doctests in the documentation. Tests are split by layer:
@@ -108,13 +109,13 @@ To build the documentation, use the dedicated task:
 
 .. code:: bash
 
-    uv run task doc
+    poe docs  # or uv run poe docs
 
 Incremental autobuild is also supported:
 
 .. code:: bash
 
-    uv run task docs-serve
+    poe docs-serve  # or uv run poe docs-serve
 
 Maintainers: release process
 ----------------------------
