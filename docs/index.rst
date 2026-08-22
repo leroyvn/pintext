@@ -36,7 +36,7 @@ that core are provided.
         Migrate from Pinttrs.
 
     .. grid-item-card:: :iconify:`material-symbols:code height=1.5em` Developer guide
-        :link: dev/index
+        :link: dev
         :link-type: doc
 
         Contribute to and maintain Pintext.
@@ -80,7 +80,7 @@ the `Eradiate radiative transfer model <https://www.eradiate.eu>`_.
    :hidden:
    :caption: Develop
 
-   dev/index.md
+   dev
    GitHub repository <https://github.com/rayference/pintext>
 
 .. toctree::

@@ -36,9 +36,9 @@ The core depends on Pint alone; the class-framework integrations are optional.
 ## Installation
 
 ```bash
-python -m pip install pintext
-python -m pip install "pintext[attrs]"  # attrs integration
-python -m pip install "pintext[pydantic]"  # pydantic integration
+pip install pintext
+pip install "pintext[attrs]"  # attrs integration
+pip install "pintext[pydantic]"  # pydantic integration
 ```
 
 Check the [documentation](https://pintext.readthedocs.io) for more detail.
