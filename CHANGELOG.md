@@ -40,32 +40,24 @@ for a complete symbol map and migration instructions.
   used to pass through are now converted. Failed conversions still pass
   through, unless strict mode is requested. `TypeError` is caught
   alongside `UndefinedUnitError`, since Pint raises it for magnitudes such
-  as `None`, which the passthrough contract must keep returning as-is.
+  as `None`, which the pass-through contract must keep returning as-is.
   Parse failures Pint reports outside its own exception hierarchy
-  (`TokenError`, `AssertionError`, `ArithmeticError`) are caught too, so
-  strings such as "(", "3 +" and "1/0" honour the same contract.
+  (`TokenError`, `AssertionError`, `ArithmeticError`) are caught too, so strings
+  such as "(", "3 +" and "1/0" are processed as expected (pass through  by
+  default, raise in strict mode).
 - Parse string values in `ensure_units()`. Multiplying a string by units
-  produced a quantity whose magnitude was the string itself, silently.
-  Strings are now parsed with the default unit registry: unit-carrying
-  strings become quantities, unitless ones receive the default units,
-  and unparsable ones raise.
-- The pydantic integration guards its `to_quantity()` call accordingly.
-  Applying it to a plain magnitude would make it dimensionless and pass
-  it straight through `ensure_units()`, so the field's default units
-  would never apply; only serialized input (mappings, DataArrays) is
-  interpreted. Strings follow `ensure_units()`, so "2" receives the
-  declared units while "2 km" is parsed; unparsable strings are
-  re-raised as a ValueError and hence collected
-  into a ValidationError instead of crashing the caller.
+  silently produced a quantity whose magnitude was the string itself. Strings
+  are now parsed with the default unit registry: unit-carrying strings become
+  quantities, unitless ones receive the default units, and unparsable ones
+  raise.
 - Array magnitudes serialize to JSON as arrays, as the JSON schema
   already advertised.
 - `UnitContext` no longer applies its `key_converter` twice upon
-  registration, which broke non-idempotent converters. Enum converters
-  hid the bug, being idempotent.
+  registration.
 
 **Packaging**
 
-- Reset the version from CalVer 26.2.0.dev0 to SemVer 0.1.0.dev0.
+- Reset the version from CalVer (26.2.0.dev0) to SemVer (0.1.0.dev0).
 - Drop Python 3.8 and 3.9; required Python is now 3.10 or later.
 - Publish with PyPI Trusted Publishing instead of an API token.
 - Drop conda-forge packaging; PyPI is the only distribution channel.
@@ -77,9 +69,9 @@ for a complete symbol map and migration instructions.
 - Switch the Sphinx theme from Furo to shibuya and restructure the docs
   around unit contexts, with attrs and pydantic as sibling integration
   guides.
-- Add a porting guide for the pinttrs-to-pintext
-  migration.
+- Add a porting guide for the pinttrs-to-pintext migration.
 - Add a CI job that installs without extras to enforce the Pint-only core, plus
   a lint job running ruff and ty.
 - Add `AGENTS.md` (with `CLAUDE.md` as a symlink) and `AI_POLICY.md`.
-- Update the pre-commit hooks and satisfy [sp-repo-review](https://github.com/scientific-python/repo-review).
+- Update the pre-commit hooks and satisfy
+  [sp-repo-review](https://github.com/scientific-python/repo-review).
