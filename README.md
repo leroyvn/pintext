@@ -62,4 +62,4 @@ Pintext is a component of the
 
 Pintext was previously released as
 [Pinttrs](https://pypi.org/project/pinttrs), which it supersedes. Pintext contains breaking changes, see the
-[porting guide](https://pintext.readthedocs.io/en/latest/porting.html) for details.
+[porting guide](https://pintext.readthedocs.io/latest/porting.html) for details.

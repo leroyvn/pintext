@@ -58,4 +58,4 @@ the gotchas that trip agents up — lives in [`AGENTS.md`](AGENTS.md).
 
 ## Are you willing to contribute?
 
-Then head on to our [developer's guide](https://pintext.readthedocs.io/en/latest/dev/index.html).
+Then head on to our [developer's guide](https://pintext.readthedocs.io/latest/dev.html).

@@ -76,6 +76,6 @@ html_theme_options = {
         {"title": "User guide", "url": "user_guide/index"},
         {"title": "Porting", "url": "porting"},
         {"title": "API", "url": "api/pintext"},
-        {"title": "Contributing", "url": "dev/index"},
+        {"title": "Contributing", "url": "dev"},
     ],
 }
