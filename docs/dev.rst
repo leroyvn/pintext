@@ -5,10 +5,10 @@ AI usage policy
 ---------------
 
 Pintext has an explicit
-`AI usage policy <https://github.com/rayference/pintext/blob/main/AI_POLICY.md>`__.
+`AI usage policy <https://github.com/leroyvn/pintext/blob/main/AI_POLICY.md>`__.
 Please read it before opening an issue or a pull request. Agent-specific
 guidance for working in this repository lives in
-`AGENTS.md <https://github.com/rayference/pintext/blob/main/AGENTS.md>`__ .
+`AGENTS.md <https://github.com/leroyvn/pintext/blob/main/AGENTS.md>`__ .
 
 Contributing to the code base
 -----------------------------
@@ -30,7 +30,7 @@ Clone the repository:
 
 .. code:: bash
 
-    git clone git@github.com:rayference/pintext.git
+    git clone git@github.com:leroyvn/pintext.git
 
 Enter the created repository and set up the development environment:
 
@@ -142,7 +142,7 @@ Pintext follows `Semantic Versioning <https://semver.org/>`__.
 **Release steps**
 
 1. Create a
-   `new release on GitHub <https://github.com/rayference/pintext/releases>`__.
+   `new release on GitHub <https://github.com/leroyvn/pintext/releases>`__.
 2. When asked for a tag, create a new one (``v<MAJOR.MINOR.PATCH>``).
 3. The automated workflow will build the package and upload it to PyPI using
    `Trusted Publishing <https://docs.pypi.org/trusted-publishers/>`__. No API

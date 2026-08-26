@@ -48,7 +48,7 @@ that core are provided.
         Release history and migration notes.
 
     .. grid-item-card:: :iconify:`simple-icons:github height=1.5em` GitHub
-        :link: https://github.com/rayference/pintext/
+        :link: https://github.com/leroyvn/pintext/
 
         Browse the source code.
 
@@ -81,7 +81,7 @@ the `Eradiate radiative transfer model <https://www.eradiate.eu>`__.
    :caption: Develop
 
    dev
-   GitHub repository <https://github.com/rayference/pintext>
+   GitHub repository <https://github.com/leroyvn/pintext>
 
 .. toctree::
    :hidden:
