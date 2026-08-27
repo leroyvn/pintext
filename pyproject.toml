@@ -31,11 +31,11 @@ pydantic = ["pydantic>=2.0"]
 xarray = ["xarray>=2023.1.0"]
 
 [project.urls]
-Changelog = "https://github.com/rayference/pintext/blob/main/CHANGELOG.md"
+Changelog = "https://github.com/leroyvn/pintext/blob/main/CHANGELOG.md"
 Documentation = "https://pintext.readthedocs.io"
-Homepage = "https://github.com/rayference/pintext"
-Issues = "https://github.com/rayference/pintext/issues"
-Repository = "https://github.com/rayference/pintext"
+Homepage = "https://github.com/leroyvn/pintext"
+Issues = "https://github.com/leroyvn/pintext/issues"
+Repository = "https://github.com/leroyvn/pintext"
 
 [tool.coverage.html]
 directory = "./reports/coverage/html"

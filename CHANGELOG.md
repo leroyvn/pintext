@@ -1,6 +1,13 @@
 # Release notes
 
-## Pintext 0.1.0 (*upcoming release*)
+## Pintext 0.1.1 (27th August 2026)
+
+**Fixes**
+
+- Fixed incorrect package metadata.
+- Mentioned Pydantic integration as experimental.
+
+## Pintext 0.1.0 (26th August 2026)
 
 Pinttrs is rescoped and renamed to **Pintext**. The package is now built around
 unit contexts, and *attrs* integration becomes one of two optional

@@ -151,7 +151,7 @@ Additional entries are added with :meth:`~.UnitContext.register`:
         >>> uctx["time"]
         <Unit('second')>
 
-:meth:`~.UnitContext.get` returns *evaluated* units — a snapshot. To keep the
+:meth:`~.UnitContext.get` returns *evaluated* units (a snapshot). To keep the
 indirection, ask for the generator itself with :meth:`~.UnitContext.deferred`:
 
 .. doctest::
@@ -213,7 +213,7 @@ Its constructor doubles as a converter:
     >>> PhysicalQuantity("length")
     <PhysicalQuantity.LENGTH: 'length'>
 
-Declaring it as the context's ``key_converter`` keeps strings usable — which
+Declaring it as the context's ``key_converter`` keeps strings usable, which
 also keeps the keyword-argument form of :meth:`~.UnitContext.override` working:
 
 .. doctest::

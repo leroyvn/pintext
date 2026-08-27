@@ -58,7 +58,7 @@ Set ``convert=True`` to force conversion:
    >>> pintext.ensure_units(100.0 * ureg.km, default_units=ureg.m, convert=True)
    <Quantity(100000.0, 'meter')>
 
-**Deferred mode** — omitting the value — returns a converter function. This is
+**Deferred mode** (omitting the value) returns a converter function. This is
 the form used by the class-framework integrations, and the form that makes unit
 contexts effective, since ``default_units`` is re-evaluated on every call:
 

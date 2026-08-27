@@ -4,8 +4,6 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/pintext?color=blue)](https://pypi.org/project/pintext)
 [![Documentation Status](https://img.shields.io/readthedocs/pintext)](https://pintext.readthedocs.io)
-[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 ## Motivation
 

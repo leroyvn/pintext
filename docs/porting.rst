@@ -9,14 +9,14 @@ integration is now optional and lives in a dedicated namespace.
 
 .. warning::
     **There is no compatibility shim.** The ``pinttr`` and ``pinttrs`` import
-    namespaces no longer exist, and nothing is deprecated-but-working — removed
+    namespaces no longer exist, and nothing is deprecated-but-working: removed
     names are simply gone. Porting is a one-time, mechanical edit; this page
     lists every change you need to make.
 
 Installation and imports
 ------------------------
 
-The distribution is renamed, and *attrs* is no longer a hard dependency — it
+The distribution is renamed, and *attrs* is no longer a hard dependency, it
 moved behind an extra:
 
 .. code-block:: diff
@@ -182,8 +182,9 @@ survives being moved, nested or passed around on its own, and it is what the
 Keeping legacy documents readable
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you cannot reshape your data — stored documents, a published format — drop
-this adapter into your own code. It reproduces what ``interpret_units()`` did:
+If you cannot reshape your data (*e.g.* stored documents, a published format),
+drop this adapter into your own code. It reproduces what ``interpret_units()``
+did:
 
 .. doctest::
 
@@ -241,7 +242,7 @@ values dimensionless:
 
 Values Pint cannot interpret still pass through; ``strict=True`` raises a
 ``ValueError`` instead. Code that applied ``to_quantity()`` indiscriminately and
-relied on plain magnitudes surviving untouched must guard the call — this is
+relied on plain magnitudes surviving untouched must guard the call. This is
 what :class:`pintext.pydantic.Units` does, so that a plain magnitude still
 receives the field's default units rather than becoming dimensionless.
 
@@ -275,7 +276,7 @@ later.
 **Versioning switched from CalVer to SemVer.** Pinttrs used ``YY.MINOR.MICRO``;
 Pintext starts at ``0.1.0`` and follows `Semantic Versioning
 <https://semver.org/>`__. A version comparison that assumed the year prefix will
-read Pintext versions as older — pin on the distribution name instead.
+read Pintext versions as older: pin on the distribution name instead.
 
 What is new
 -----------

@@ -3,6 +3,9 @@
 pydantic integration
 ====================
 
+.. important::
+    Pydantic integration is experiment: breaking changes might happen.
+
 This extension requires that the pydantic (v2) package is installed.
 If not done externally in your project, it can be requested with the ``pydantic``
 extra:
@@ -46,10 +49,9 @@ metadata:
 
 .. warning::
     ``quantity(...)`` is a *function call*, which static type checkers reject
-    inside an annotation — the same reason pydantic deprecated ``conint`` and
-    ``constr``. Use the :class:`~pintext.pydantic.Units` spelling wherever
-    static checking matters; ``quantity()`` is a convenience for interactive
-    use.
+    inside an annotation. Use the :class:`~pintext.pydantic.Units` spelling
+    wherever static checking matters; ``quantity()`` is a convenience for
+    interactive use.
 
 Units may also be given as a string, interpreted against the registry returned
 by :func:`.get_unit_registry`:
@@ -94,8 +96,8 @@ so they compose with pydantic's error collection:
 Dictionary input
 ----------------
 
-Serialized values — mappings, unit-carrying strings and
-:class:`xarray.DataArray` objects — are passed through :func:`.to_quantity`
+Serialized values (*e.g.* mappings, unit-carrying strings and
+:class:`xarray.DataArray` objects) are passed through :func:`.to_quantity`
 first, which is what makes loading from JSON or YAML work:
 
 .. doctest::

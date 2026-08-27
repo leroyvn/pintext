@@ -10,7 +10,7 @@ authors:
     email: vincent.leroy@rayference.eu
     affiliation: Rayference
     orcid: 'https://orcid.org/0000-0002-5407-0237'
-repository-code: 'https://github.com/rayference/pintext'
+repository-code: 'https://github.com/leroyvn/pintext'
 url: 'https://pintext.readthedocs.io'
 abstract: >-
   Pintext provides unit contexts for Pint: a registry of
