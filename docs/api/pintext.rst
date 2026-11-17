@@ -37,3 +37,10 @@ Exceptions
 ----------
 
 .. autoclass:: pintext.UnitsError
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   pintext.attrs
+   pintext.pydantic

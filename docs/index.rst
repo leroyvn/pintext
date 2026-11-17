@@ -61,7 +61,7 @@ the `Eradiate radiative transfer model <https://www.eradiate.eu>`__.
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Use
+   :caption: User guide
 
    user_guide/index
    porting
@@ -69,19 +69,16 @@ the `Eradiate radiative transfer model <https://www.eradiate.eu>`__.
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Reference
+   :caption: API reference
 
    api/pintext
-   api/pintext.attrs
-   api/pintext.pydantic
 
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Develop
+   :caption: Developer guide
 
    dev
-   GitHub repository <https://github.com/leroyvn/pintext>
 
 .. toctree::
    :hidden:

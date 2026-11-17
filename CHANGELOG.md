@@ -1,4 +1,6 @@
-# Release notes
+# Pintext — Changelog
+
+---
 
 ## Pintext 0.1.1 (27th August 2026)
 

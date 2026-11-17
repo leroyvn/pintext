@@ -1,5 +1,5 @@
-Contributing
-============
+Developer guide
+===============
 
 AI usage policy
 ---------------
